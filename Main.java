@@ -26,10 +26,17 @@
             command = getCommand("Open the creepy door (o) or go upstairs (u)");
 
             if ( command.equals ("o") ) {
-               System.out.println("You see former president Bill Clinton and Steve Cohen eating lunch");
+               System.out.println("You see  Bill Clinton and Steve Cohen eating lunch");
+               command = getCommand("Do you interupt their meeting? (y/n)");
+               if ( command.equals("y") ) {
+                  System.out.println("Steve calls security and you are traquilized. GAME OVER. Press RUN to replay.");
+               }
+               else if ( command.equals("n") ) {
+                  System.out.println("You walk back outside and Obama picks you up in a private jet. YOU WIN!");
+               }
             }
             else if ( command.equals ("u") ) {
-               System.out.println("Donald Trump is waiting for you at the top of the stairs with a creepy grin.");
+               System.out.println("Gunna is waiting for you at the top of the stairs");
             }
 
          }
