@@ -37,6 +37,24 @@
             }
             else if ( command.equals ("u") ) {
                System.out.println("Gunna is waiting for you at the top of the stairs");
+
+               command = getCommand("Go up the stairs (z) or run away (r)");
+
+               if ( command.equals("z") ) {
+                  System.out.println("Gunna shoots you. GAME OVER. Press RUN to replay");
+               }
+               else if ( command.equals("r") ) {
+                  System.out.println("You hear spanish music. It's Bad Bunny in a helicopter");
+
+                  command = getCommand("Get in Bad Bunny's helicopter (y/n)");
+
+                  if ( command.equals("y") ) {
+                     System.out.println("Bad Bunny takes you to Puerto Rico! YOU WIN");
+                  }
+                  else if ( command.equals("n") ) {
+                     System.out.println("Gunna comes up behind you. You DIE. GAME OVER. Press RUN to replay");
+                  }
+               }
             }
 
          }
